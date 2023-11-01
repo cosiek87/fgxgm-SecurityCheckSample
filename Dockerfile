@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y zlib1g-dev
 
 FROM alpine:latest
 RUN apk update && apk add zlib
+RUN apk upgrade libssl3 libcrypto3
 
 ADD package.json .
 ADD index.js .
