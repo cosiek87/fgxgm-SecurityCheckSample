@@ -1,6 +1,6 @@
-FROM node:18.17.1
+FROM node:20.9.0
 
-RUN npm install -g npm@9.1.3
+RUN npm install -g npm@10.2.2
 
 ADD package.json .
 ADD index.js .
